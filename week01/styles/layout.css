@@ -9,6 +9,11 @@ body {
     padding: 2rem;
     grid-column: 1 / 4;
   }
+  nav {
+    background: lightgray;
+    padding: 1rem;
+    grid-column: 1 / 4; /* Adjust the grid-column to span across all columns */
+}
   
   .left-sidebar {
     background: lightblue;
@@ -42,9 +47,10 @@ body {
 }
 nav {
 	margin: 0 auto 2rem;
-    padding: 2rem;
-	/*max-width: 90vw;*/
-    grid-column: 1/4;
+	max-width: 90vw;
+    display: flex;
+    justify-content: center;
+    
 }
 
 .modern a {
