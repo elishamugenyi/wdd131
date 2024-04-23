@@ -36,13 +36,14 @@ body {
   .right-sidebar {
     padding: 1rem;
   }
-  * {
+*{
 	margin: 0;
 	padding: 0;
 }
 nav {
 	margin: 0 auto 2rem;
-	max-width: 90vw;
+	/*max-width: 90vw;*/
+    grid-column: 1/4;
 }
 
 .modern a {
