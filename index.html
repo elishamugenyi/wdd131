@@ -1,61 +1,98 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>"WDD 131: Dynamic Web Fundamentals - Elisha Mugenyi"</title>
-    <meta name="description" content="WDD 131  - Dynamic Web Fundamentals, Elisha Mugenyi, This page contains a summary about me.">
+    <title>WDD 131: - Dynamic Web Fundamentals - Elisha Mugenyi </title>
     <meta name="author" content="Elisha Mugenyi">
+    <meta name="description" content="Elisha Mugenyi, WDD 131 - Dynamic Web Fundamentals, BYUI, W01 Assignment: Home Page">
+    <meta property="og:url" content="https://elishamugenyi.github.io/wdd131/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Elisha Mugenyi - WDD 131 - Dynamic Web Fundamentals">
     <link rel="stylesheet" href="styles/base.css">
-</head>
-<body>
-<header>
-<h2>WDD 131: Dynamic Web Fundamentals - Elisha Mugenyi</h2>
-<nav class="navigation modern">
-    <a href="https://www.linkedin.com/in/elisha-mugenyi-78ab81160/" title="linkedIn">LinkedIn</a>
-    <a href=" https://byui.instructure.com/" title="I-learn">I-Learn</a>
-    <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/7?lang=eng&id=p11-p12#p11" title="Services">Scriptures</a>
-    <a href="#" title="Final Project">Final Project</a>
-</nav>
-</header>
-<section class="about-me">
-    <h2>About Me</h2>
-    <div class="about-content">
-        <div class="bio">
-            <p>My name is Elisha Mugenyi, I am a student of BS Software Development from BYU-Idaho. I was born and raised from Uganda, i love programming and i want my career to be in Software Development.</p>
-            <img src="images/eli.jpg" alt="Elisha">
-        </div>
-        <div class="uganda">
-            <h2>Kampala, Uganda</h2>
-            <p>Uganda was named The Pearl of Africa by then UK Prime Minister, Churchill Winston. Uganda has a cool weather all year round and it is home to the world's rarest Gorillas, The Silverbacks. Uganda is located in the East of Africa.</p>
-            <img src="images/ugandan-flag.png" alt="Flag of Uganda">   
-        </div> 
-    </div>
-</section>
-<!--<main contenteditable></main> -->
-<section class="web-dev-resources">
-    <h2>Web Dev Resources</h2>
-    <div class="resources">
-        <ul>
-        <li><a href="https://www.w3schools.com/css/default.asp">CSS Tricks</a></li>
-        <li><a href="https://www.w3schools.com/css/default.asp">W3 Schools</a></li>
-        <li><a href="https://www.coursera.org/learn/ibm-data-analyst-capstone-project/home/week/6">Coursera</a></li>
-    </ul>
-    </div>
-</section>
+    <script defer src="scripts/getdates.js"></script>
+  </head>
+  <body>
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals - Elisha Mugenyi</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/elisha-mugenyi-78ab81160/" title="LinkedIn">LinkedIn</a></li>
+                <li><a href=" https://byui.instructure.com/" title="I-learn">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/7?lang=eng&id=p11-p12#p11" title="Scriptures">Scriptures</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="main">
 
-<!--<div class="right-sidebar" contenteditable>Right Sidebar content</div>-->
+        <section class="card">
 
-<!--<section class="uganda-info">
-    <h2>Kampala, Uganda</h2>
-    <p>Uganda was named The Pearl of Africa by then UK Prime Minister, Churchill Winston. Uganda has a cool weather all year round and it is home to the world's rarest Gorillas, The Silverbacks. Uganda is located in the East of Africa.</p>
-    <img src="images/ugandan-flag.png" alt="Flag of Uganda">
-</section>-->
-<footer>
+            <h2>About Me</h2>
 
-    <p id="lastModified"></p>
-</footer> 
+            <div class="first">
+                <p>
+                    My name is Elisha Mugenyi, I am a student of BS Software Development from BYU-Idaho.
+                    I was born and raised from Uganda. I love programming and i want my career to be in 
+                    Software Development.
+                    I enjoy soccer, and other outdoor sports. Learning a new skill is my priority in any,
+                    programming class. I have worked on programming applications that solve immediate problems
+                    for everyday people, like making school payments. 
+                </p>
 
-<script src="scripts/getdates.js"></script>
-</body>
+                <img src="images/eli.jpg" alt="Elisha Mugenyi" loading="lazy" width="250" height="256">
+
+            </div>
+
+            <div class="second">
+
+                <h3>Kampala, Uganda</h3>
+
+                <div class="divider"></div>
+
+                <div class="country">
+
+                    <div class="flag">
+                        <img src="images/ugandan-flag.png" alt="ugandan flag with silver-back" loading="lazy">
+                        <p>Ugandan flag with a Silverback Gorilla.</p>
+                    </div>
+
+                    <div class="details">
+                        <p>
+                            Uganda was named The Pearl of Africa by then UK Prime Minister, Churchill Winston.
+                            Uganda has a cool weather all year round and it is home to the world's rarest Gorillas, The Silverbacks. 
+                            Uganda is located in the East of Africa.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="card-2">
+            <h2>Web Dev Resources</h2>
+            <div class="resources">
+                <ul>
+                    <li><a href="https://blog.hubspot.com/website/add-css-to-html" target="_blank" title="blog-hubspot">Add CSS To Html</a></li>
+                    <li><a href="https://www.w3schools.com/" target="_blank" title="W3Schools">W3Schools</a></li>
+                    <li><a href="https://www.freecodecamp.org/" target="_blank" title="freeCodeCamp">freeCodeCamp</a></li>
+                    <li><a href="https://css-tricks.com/" target="_blank" title="CSS-Tricks">CSS-Tricks</a></li>
+                    <li><a href="https://www.coursera.org/learn/ibm-data-analyst-capstone-project/home/week/6">Coursera</a></li>
+                </ul>
+            </div>
+            
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear">2024</span> Elisha Mugenyi 🇺🇬 Uganda
+        </p>
+        <p id="lastModified">last</p>
+    </footer>
+    
+  </body>
 </html>
