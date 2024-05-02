@@ -91,7 +91,7 @@ h2 {
     font-size: 1.5rem;
     color: navy;
     text-align: center;
-    margin-top: 25px;
+    margin : 0 auto;
 }
 
 h3 {
@@ -109,12 +109,20 @@ picture {
     margin: 0 auto;
 }
 
-picture img {
+img {
     width: 240px;
     height: auto;
     border-radius: 5%;
     border: 1px solid #ccc;
     box-shadow: 0 0 30px #777;
+}
+
+figure {
+    text-align: center; /* Centering the figure content */
+}
+
+figcaption {
+    margin-top: 10px; /* Adding some space between image and caption */
 }
 
 section {
@@ -214,6 +222,18 @@ footer {
 
 /* ID Selectors */
 
+#gridly {
+    max-width: 800px; /*limiting the width*/
+    margin: 0 auto; /*centers it center horizontally*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* Responsive grid layout */
+    gap: 20px; /* Gap between grid items */
+    text-align: center;
+}
+
+#gridly h2 {
+    grid-column: 1/ -1;/*span across all columns*/
+}
 #home {
     margin-top: 125px;
     display: grid;
