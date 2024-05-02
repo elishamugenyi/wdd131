@@ -1,9 +1,9 @@
 /* Declare and initialize global variables */
-const templesElement = document.getElementById("temples");
-let templeList = [];
+/*const templesElement = document.getElementById("temples");
+let templeList = [];*/
 
 /* async displayTemples Function */
-const displayTemples = (temples) => {
+/*const displayTemples = (temples) => {
     temples.forEach((temple) => {
       const article = document.createElement("article");
   
@@ -20,22 +20,22 @@ const displayTemples = (temples) => {
       templesElement.appendChild(article);
     });
   };
-
+*/
 /* async getTemples Function using fetch()*/
-const getTemples = async () => {
+/*const getTemples = async () => {
     const response = await fetch('https://byui-cse.github.io/cse121b-ww-course/resources/temples.json');
     templeList = await response.json();
     displayTemples(templeList);
   };
-
+*/
 /* reset Function */
-const reset = () => {
+/*const reset = () => {
     templesElement.innerHTML = '';
   };
-  
+  */
 
 /* filterTemples Function */
-const filterTemples = (temples) => {
+/*const filterTemples = (temples) => {
     reset();
     const filter = document.getElementById("filtered").value;
   
@@ -59,7 +59,7 @@ const filterTemples = (temples) => {
   //Event Listener: filterTemples Element change
 document.getElementById("filtered").addEventListener("change", () => {
     filterTemples(templeList);
-  });
+  }); */
 
   const hamButton = document.querySelector('#menu');
   const navigation = document.querySelector('.navigation');
@@ -72,4 +72,4 @@ document.getElementById("filtered").addEventListener("change", () => {
   // Initialize
 //document.getElementById("year").innerHTML = new Date().getFullYear();
 
-getTemples();
+/*getTemples();*/
