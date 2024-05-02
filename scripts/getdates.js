@@ -1,27 +1,20 @@
 document.addEventListener('DOMContentLoaded', function() {
     var footer = document.querySelector('footer');
     
-    // Get the current date
-    var currentDate = new Date();
-    var year = currentDate.getFullYear(); // Get the current year
-
-    //get separate components.
-    //var date = currentDate.getDate();
-    //var month = currentDate.getMonth() + 1 ; //months are zero based, so add 1
-    //var hours = currentDate.hetHours();
-    //var minutes = currentDate.getMinutes();
-    //var seconds = currentDate.getSeconds();
-
-    // Format the date and time
-    //var formattedDateTime = `${date}/${month}/${year} ${hours}:${minutes}:${seconds}`;
-
     
-    // Construct the copyright message
-    var copyrightMessage = '\u00A9' + year + ' - Elisha Mugenyi 🇺🇬 Uganda'; // Using Unicode for copyright and flower emoji
-    
-    // Set the copyright message in the footer
-    footer.querySelector('#lastModified').textContent = copyrightMessage;
+    // Get the current year
+    const currentYear = new Date().getFullYear();
 
-    //set the last modification message
-    //document.getElementById('lastModification').textContent = `Last Modified: ${formattedDateTime}`;
+    // Update the span element with the current year
+    document.getElementById('currentyear').textContent = ` \u00A9 ${currentYear}`;
+
+    // Get the last modified date of the file
+    const lastModified = new Date(document.lastModified);
+
+    // Format the last modified date as required (e.g., "MM/DD/YYYY HH:MM:SS")
+    const formattedLastModified = `${lastModified.getMonth() + 1}/${lastModified.getDate()}/${lastModified.getFullYear()} ${lastModified.getHours()}:${lastModified.getMinutes()}:${lastModified.getSeconds()}`;
+
+    // Update the paragraph element with the last modified date
+    document.getElementById('lastModified').textContent = `Last Modified: ${formattedLastModified}`;
+    
 });
