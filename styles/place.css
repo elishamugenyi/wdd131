@@ -105,3 +105,9 @@ footer{
     
     
 }
+@media only screen and (min-width: 32.5rem) {
+    h1, footer {
+        flex-direction: row;
+        max-width: fit-content;
+    }
+}
