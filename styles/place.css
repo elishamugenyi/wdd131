@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #007bff; /* Define primary color */
-    --secondary-color: #6c757d; /* Define secondary color */
+    --label: #007bff; /* Define primary color */
+    --label1: #6c757d; /* Define secondary color */
   }
   
 .banner {
