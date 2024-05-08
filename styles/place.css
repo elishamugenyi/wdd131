@@ -1,4 +1,8 @@
-
+:root {
+    --primary-color: #007bff; /* Define primary color */
+    --secondary-color: #6c757d; /* Define secondary color */
+  }
+  
 .banner {
     display: flex;
     background-color: lightcoral;
