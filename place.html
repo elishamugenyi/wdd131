@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title content="WDD 131, W03 Assignment: Country Page">WDD 131, W03 Assignment: Country Page</title>
+    <meta name="author" content="Elisha Mugenyi">
+    <meta name="description" content="Elisha Mugenyi, WDD 131 - W03 Country Page. This page is responsive to different screens.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script defer src="scripts/getdates.js"></script>
+
+  </head>
+  <body>
+    <div class="banner">
+        <h1>Uganda, Kampala</h1>
+    </div>
+        <div class="hero">
+            <picture>
+                <source srcset="images/trial.jpg" media="(min-width: 1000px)">
+                <img src="images/kla-city-large.webp" width="300" height="200">
+            </picture>
+            <div class="overlay-data">
+                <h3>Data</h3>
+                <div class="label-value-pair">
+                    <div>
+                        <span class="label">Capital City :</span>
+                        <span class="value">Yes</span>
+                    </div>
+                    <div>
+                        <span class="label">Population :</span>
+                        <span class="value">8 Million</span>        
+                    </div>
+                    <div>
+                        <span class="label">GDP :</span>
+                        <span class="value">$600</span>
+                    </div>    
+                </div>
+                
+            </div>
+            <div class="overlay-weather">
+                <div class="weather-header">
+                    <h3>Weather</h3>
+                    <img src="images/weather.svg">
+                </div>
+                
+                <div class="label-value-pair1">
+                    <span class="label1"><img src="images/sun.svg"> </span>
+                    <span id="sun"></span>
+                </div>
+                <div>
+                    <span class="label1"><img src="images/rain.svg"> </span>
+                    <span id="rain"></span>
+                </div>
+                <div>
+                    <span class="label1"><img src="images/windchill.svg"> </span>
+                    <span id="windchill"></span>
+                </div>
+            </div>
+        </div>
+    <footer>
+        <p>
+          <span id="currentyear"></span> Elisha Mugenyi 🇺🇬 Uganda
+        </p>
+        <p id="lastModified">last</p>
+    </footer>
+
+  </body>
+</html>
