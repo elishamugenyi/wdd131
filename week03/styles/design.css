@@ -9,10 +9,14 @@ footer {
 	margin: 0 auto;
 }
 
-marquee {
-	padding: 1rem;
-	background-color: #eee;
-}
+div.banner {
+    border: 1px solid #bbb;
+    padding: 1rem;
+    background-color: rgb(230, 243, 254);
+    font-weight: 700;
+       word-break: break-word;
+      text-align: center;
+  }
 
 h1 {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -20,20 +24,50 @@ h1 {
 
 main {
 	display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; /*spacing the columns*/
+}
+main > h2 {
+    grid-column: span 2; /*spanning across the two columns*/
+}
+section article {
+    display: grid;
+    grid-template-columns: 2/2;
+}
+section ul li {
+    display: grid;
+    grid-template-columns: 1/1;
+}
+ul {
+    margin-top: 0; /* Remove default margin from the ul */
+}
+section, .callout {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+}
+
+section h3 {
+    text-align: left;
 }
 
 h2 {
 	color: navy;
 	text-align: center;
+    
 }
 
 article p {
 	text-align: justify;
 }
 
+
 .callout {
-	color: #777;
+	grid-column: span 2;
+    color: whitesmoke;
 	background-color: #702963;
+    padding-left: 1rem;
 }
 
 footer {
