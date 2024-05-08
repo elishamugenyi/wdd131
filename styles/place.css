@@ -1,59 +1,109 @@
+:root {
+    /* fonts */
+    --font-heading: "Roboto", serif;
+    --font-page: "Helvetica", sans-serif;
+    /* colors */
+    --flag-red: #FF0000;
+    --flag-yellow: #FFFF00;
+    --white: #ffffff;
+    --flag-black: #000000;
+}
+
 
 @media only screen and (min-width: 32.5rem) {
     h1 {
         flex-direction: row;
         max-width: fit-content;
     }
+    body {
+        position: relative;
+    }
+    .overlay-data, .overlay-weather {
+        padding: 1rem;
+    }
+    .overlay-data {
+        position: absolute;
+        top: 170px;
+        left: 20px;
+        width: 350px;
+        background-color: var(--flag-yellow);
+        color: var(--flag-black);
+    }
+    #weather-icon {
+        display: none;
+    }
+
+    .overlay-weather {
+        position: absolute;
+        right: 20px;
+        bottom: 100px;
+        width: 350px;
+        background-color: var(--flag-yellow);
+        color: var(--flag-black);
+        display: grid;
+    }
+
+    .overlay-weather h3::after {
+        content: '  ';
+        text-shadow: 0 0 3px white;
+    }
+
 }
 
 .banner {
     display: flex;
-    background-color: rgb(232, 191, 11);
-    border: 10px solid #a52005;
+    background-color: var(--flag-black);
+    border: 5px solid var(--flag-yellow);
     border-radius: 20px;
-    margin: 1rem;
+    width: 100%;
     position: relative;/*added just*/
 }
 .banner h1 {
     text-align: center;
     margin-left: 40%;
-    font-family: 'Roboto', Helvetica, sans-serif;
+    font-family: var(--font-heading);
     font-weight: 100;
+    color: var(--white);
 }
 .hero {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    /*width: 100%;
     height: auto; /* Adjust height as needed */
     position: relative; /* Required for positioning the overlay */
 }
-.hero img {
-    
-    top: 0;
-    left: 0;
+.hero picture {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    
 }
+.hero img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
 .overlay-data {
     position: absolute;
     top: 0;
     left: 0;
-    margin-left: 2%;
+    margin-top: 1%;
     height: 30%;
     width: 30%;
     border-radius: 10px;
-    border: 5px solid #a52005;
+    border: 5px solid var(--white);
     padding: 10px; /* Adjust padding as needed */
-    background-color: rgba(225, 145, 6, 0.829); /* Adjust the opacity as needed */
-    color: black; /* Add text color for better visibility */
+    background-color: var(--flag-yellow); /* Adjust the opacity as needed */
+    color: var(--flag-black); /* Add text color for better visibility */
 }
 
 .overlay-data h3 {
-    text-align: left;
-    margin-left: 2px;
-    color: black;
+    text-align: center;
+    color: var(--flag-black);
+    font-family: var(--font-heading);
 }
 
 /* Optionally, you can style the colon */
@@ -70,49 +120,61 @@
     right: 0;
     padding: 5px;
     width: 30%;
-    height: auto;
-    margin-top: 10%;
-    border: 5px solid #a52005;
+    height: 30%;
+    border: 5px solid var(--white);
     border-radius: 10px;
-    background-color: rgba(225, 145, 6, 0.829);
+    background-color: var(--flag-yellow);
     
 }
 .weather-header {
     display: flex;
     align-items: center; /* Center items vertically */
+    justify-content: space-between;
 }
 
 .weather-header h3 {
     margin-left: 40px; /* Add some space between the h3 and img */
+    font-family: var(--font-heading);
 }
-
-.overlay-weather img {
-    display: block;
-    
-    width: 10%;
-    margin-left: 10px;
-    margin-right: auto;
-    max-width: 20%;
-    
+.weather-header img {
+   width: 50px;
+   height: 50px;
 }
-
-label-value-pair1.label1 img {
+.label-value-pair {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /*display items in column*/
+    
+}
+.label-value-pair div {
+    display: flex;
+    padding: 1rem;
+    align-items: center; /* Center items vertically */
+    margin-bottom: 5px; /* Add some space between items */
+}
+
+.label,
+.value {
+    font-family: var(--font-page);
+    font-size: 1em;
+    width: 100px;
+}
+.label {
+    text-align: right;
+    font-weight: 400;
+}
+
+.value {
+    text-align: left;
+    font-weight: 400;
 }
 
 footer{
-    background-color: rgb(160, 50, 50);
-    color: black;
-    position: relative;
-    padding: 4px;
+    background-color: var(--flag-black);
+    color: var(--white);
+    padding: 1rem 1rem 1rem 1rem;
     text-align: center;
     width: 100%;
     height: auto;
-    margin: 1rem;
-    border: 10px solid #a52005;
+    border: 5px solid var(--flag-black);
     border-radius: 20px;
-    
-    
-    
 }
