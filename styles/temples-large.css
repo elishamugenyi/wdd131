@@ -1,7 +1,14 @@
 /* Media Queries */
 @media only screen and (min-width: 32.5em) {
     nav ul {
-        flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    margin: 0 auto;
+    padding: 0; /* Added */
+    /*flex-direction: row;*/
     }
 
     nav ul li:first-child {
