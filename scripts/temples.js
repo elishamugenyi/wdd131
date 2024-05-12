@@ -1,4 +1,4 @@
-/* Declare and initialize global variables */
+/* Declare and initialize global variables 
 /*const templesElement = document.getElementById("temples");
 let templeList = [];*/
 
