@@ -1,0 +1,119 @@
+/*css for first container that houses all the form controls and labels*/
+
+.container, footer {
+    margin: 2 rem;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Roboto', Helvetica, sans-serif;  
+    font-size: large;
+}
+.container h1, footer {
+    margin-bottom: 20px;
+    background-color: white;
+}
+.container label {
+    display: block;
+    padding: 5px;
+}
+
+/* Form layout */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Form labels */
+.container label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Form inputs */
+input[type=text], input[type=date], select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Radio buttons and checkboxes */
+input[type=radio], input[type=checkbox] {
+    margin-right: 10px;
+}
+
+label[for=productName], label[for=overallRating], label[for=dateOfInstallation], label[for=writtenReview], label[for=userName], label[for=features] {
+    margin-bottom: 10px;
+}
+
+div input[type=radio] {
+    margin-right: 10px;
+}
+
+div input[type=checkbox] {
+    margin-right: 10px;
+    
+}
+
+/* Aligning checkboxes and their labels to the left */
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.checkbox-group label {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    margin-bottom: 5px;
+}
+
+.checkbox-group input[type=checkbox] {
+    margin-right: 5px;
+}
+
+/* Star ratings */
+label[for=star1], label[for=star2], label[for=star3], label[for=star4], label[for=star5] {
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Submit button */
+input[type=submit] {
+    background-color: blue;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type=submit]:hover {
+    background-color: blueviolet;
+}
+
+/* Footer styles */
+footer {
+    margin-top: 40px;
+    padding: 10px;
+    background-color: whitesmoke;
+    border-top: 1px solid #ccc;
+}
+
+footer p {
+    margin: 5px 0;
+}
