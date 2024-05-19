@@ -53,7 +53,7 @@ input[type=radio], input[type=checkbox] {
     margin-right: 10px;
 }
 
-label[for=productName], label[for=overallRating], label[for=dateOfInstallation], label[for=writtenReview], label[for=userName], label[for=features] {
+label[for=productName], label[for=overallRating], label[for=dateOfInstallation], label[for=writtenReview], label[for=features] {
     margin-bottom: 10px;
 }
 
