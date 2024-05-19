@@ -1,7 +1,7 @@
 /*css for first container that houses all the form controls and labels*/
 
 .container, footer {
-    margin: 2 rem;
+    margin: 2rem;
     padding: 20px;
     text-align: center;
     font-family: 'Roboto', Helvetica, sans-serif;  
@@ -76,7 +76,6 @@ div input[type=checkbox] {
 .checkbox-group label {
     display: flex;
     flex-direction: row;
-    align-items: left;
     margin-bottom: 5px;
 }
 
