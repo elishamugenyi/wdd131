@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script  defer src="scripts/form.js"></script>
+    <script  defer src="scripts/getdates.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Product Review</h1>
+        <form method="get" action="review.html" id="reviewForm">
+            <div>
+                <label for="productName">Product Name
+                <select id="productName" name="productName" required>
+                    <option value="" disabled selected>Choose a Product ...</option>
+                    <option value="Product1">Product1</option>
+                    <option value="Product2">Product2</option>
+                    <option value="Product3">Product3</option>
+                    <!-- Add more products as needed -->
+                </select>
+                </label>
+            </div>
+            <div>
+                <label>Overall Rating</label>
+                <div>
+                    <label for="star1"></label><input type="radio" id="star1" name="overallRating" value="1" required>
+                    &#9733;</label>
+                    <label for="star2"></label><input type="radio" id="star2" name="overallRating" value="2">
+                    &#9733;&#9733;</label>
+                    <label for="star3"><input type="radio" id="star3" name="overallRating" value="3">
+                    &#9733;&#9733;&#9733;</label>
+                    <label for="star4"><input type="radio" id="star4" name="overallRating" value="4">
+                    &#9733;&#9733;&#9733;&#9733;</label>
+                    <label for="star5"><input type="radio" id="star5" name="overallRating" value="5">
+                    &#9733;&#9733;&#9733;&#9733;&#9733;</label>
+                </div>
+            </div>
+            <div>
+                <label for="dateOfInstallation">Date of Installation
+                <input type="date" id="dateOfInstallation" name="dateOfInstallation" required>
+                </label>
+            </div>
+            <div>
+                <label>Which features did you find useful in the product? (Check all that apply)</label>
+                <div class="checkbox-group">
+                    <label for="durability"><input type="checkbox" id="durability" name="features" value="Durability">
+                    Durability</label>
+                
+                    <label for="easeOfUse"><input type="checkbox" id="easeOfUse" name="features" value="Ease of Use">
+                    Ease of Use</label>
+
+                    <label for="performance"><input type="checkbox" id="performance" name="features" value="Performance">
+                    Performance</label>
+
+                    <label for="design"><input type="checkbox" id="design" name="features" value="Design">
+                    Design</label>
+                </div>
+            </div>
+            <div>
+                <label for="writtenReview">Written Review (Optional)</label>
+                <textarea id="writtenReview" name="writtenReview"></textarea>
+            </div>
+            <div>
+                <label for="userName">Your Name (Optional)</label>
+                <input type="text" id="Name" name="Name">
+            </div>
+            <div>
+                <input type="submit" value="Post Review">
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p>
+          <span id="currentyear"></span> Elisha Mugenyi 🇺🇬 Uganda
+        </p>
+        <p id="lastModified">last</p>
+    </footer>
+</body>
+</html>
