@@ -1,7 +1,20 @@
-//js code for the contact form.
 
+//js code for contact form
 document.addEventListener('DOMContentLoaded', function() {
     const feedbackForm = document.getElementById('feedbackForm');
+    //js code for the register button on the home page.
+    document.getElementById('registerButton').addEventListener("click", redirectFunction);
+
+    function redirectFunction() {
+        window.location.href="register.html";
+    }
+
+    //js code for login button on home page
+    document.getElementById('loginButton').addEventListener("click", redirect);
+
+    function redirect() {
+        window.location.href="login.html"
+    }
 
     //prevent the default form submission
     feedbackForm.addEventListener('submit', function(event) {
@@ -77,6 +90,7 @@ document.addEventListener('DOMContentLoaded', function() {
             firstName: document.getElementById('fname').value,
             lastName: document.getElementById('lname').value,
             studentId: document.getElementById('studentId').value,
+            password: document.getElementById('password').value,
             email: document.getElementById('email').value,
             age: document.getElementById('age').value,
             gender: document.getElementById('gender').value,
