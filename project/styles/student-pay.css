@@ -47,6 +47,9 @@ nav ul li a {
     padding: 10px 15px;
     transition: color 0.3s;
 }
+a {
+    color: limegreen;
+}
 nav ul li a:hover {
     color: limegreen;
 }
@@ -54,6 +57,7 @@ main.about {
     max-width: 1200px;
     margin: 0 auto;
     padding: 1rem;
+    background-color: whitesmoke;
 }
 .info {
     display: flex;
@@ -129,7 +133,101 @@ main.about {
 .button-container button:hover {
     background-color: #45a049;
 }
+/*css for contact.html page*/
+.message, .button-container, .call, .feedback {
+    margin-bottom: 2rem;
+}
 
+.feedback-and-call {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.feedback, .call {
+    flex: 1;
+    width: 50%;
+}
+
+.feedback form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+}
+
+.feedback label {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback input[type="text"],
+.feedback input[type="lname"],
+.feedback input[type="email"],
+.feedback input[type="tel"],
+.feedback textarea {
+    width: 100%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+.feedback input[type="submit"] {
+    height: 40px;
+    width: 100%;
+    font-size: large;
+    font-weight: 100;
+    color: black;
+    background-color: limegreen;
+}
+.chat-button {
+    text-align: start;
+    padding: 1rem;
+    margin: 20px;
+    font-size: 1rem;
+}
+
+.chat-button button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: black;
+    background-color: limegreen;
+    cursor: pointer;
+}
+/*end of contact page css*/
+
+/*css for register html form*/
+form {
+    background: white;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+/*end of css for register html form*/
 footer {
     background-color:black;
     color: white;
@@ -147,6 +245,22 @@ footer {
     .welcome-msg picture,
     .welcome-msg p {
         text-align: center;
+        width: 100%;
+    }
+    .feedback-and-call {
+        flex-direction: column;
+    }
+
+    .feedback form {
+        grid-template-columns: 1fr;
+    }
+
+    .feedback label,
+    .feedback input[type="text"],
+    .feedback input[type="lname"],
+    .feedback input[type="email"],
+    .feedback input[type="tel"],
+    .feedback textarea {
         width: 100%;
     }
 }
