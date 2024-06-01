@@ -1,8 +1,24 @@
 document.addEventListener('DOMContentLoaded', function(){
-    //set elements to respond to button clicks
-    document.getElementById('studentId').addEventListener('change', fetchStudentRecord);
-    document.getElementById('payNow').addEventListener("click", processPayment);
 
+    //check if we are on payment page
+    if(document.getElementById('paymentForm')) {
+        //set elements to respond to button clicks
+        const StudentIdInput =document.getElementById('studentId');
+        const PayNowButton =document.getElementById('payNow');
+        
+        //check if elements exist before excuting the script
+        if(StudentIdInput && PayNowButton) {
+            StudentIdInput.addEventListener('change', fetchStudentRecord);
+            PayNowButton.addEventListener("click", processPayment);
+        }
+
+    }
+
+    //check if we are on transaction page
+    if(document.getElementById('transactionBody')){
+        loadTransactions()
+    }
+ 
     function fetchStudentRecord() {
         // Simulate fetching student record from a database
         const studentId = document.getElementById('studentId').value;
