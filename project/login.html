@@ -11,7 +11,7 @@
     <meta property="og:title" content="Elisha Mugenyi - WDD 131, Final Project - StudentPay">
     <link rel="stylesheet" href="styles/student-pay.css">
     <link rel="stylesheet" href="styles/student-pay-large.css">
-    <script defer src="scripts/student-pay.js"></script>
+    <script defer src="scripts/login.js"></script>
     <script defer src="scripts/getdates.js"></script>
     
   </head>
@@ -21,7 +21,6 @@
         <nav>
             <ul>
                 <li><a href="home.html">Home</a></li>
-                <li><a href="transaction.html">Transactions</a></li>
                 <li><a href="contact-us.html">Contact US</a></li>
             </ul>
         </nav>
@@ -30,14 +29,15 @@
       
       <form id="loginForm" class="loginform" >
         <h3>Login To Your Account.</h3>
-        <label>Username</label>
-        <input type="text" name="username" id="username" placeholder="Enter Your student ID only" required>
+        <label>Student ID</label>
+        <input type="text" name="studentId" id="studentId" placeholder="Enter Your student ID only" required>
 
         <label>Password</label>
         <input type="password" name="password" id="password" required>
 
         <input type="submit" value="Login">
         <p>Don't have an account yet? <a href=register.html>Create one</a></p>
+        <p><a href="home.html">Back to home page</a></p>
       </form>
     </main>
 

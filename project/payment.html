@@ -11,7 +11,8 @@
     <meta property="og:title" content="Elisha Mugenyi - WDD 131, Final Project - StudentPay">
     <link rel="stylesheet" href="styles/student-pay.css">
     <link rel="stylesheet" href="styles/student-pay-large.css">
-    <script defer src="scripts/student-pay.js"></script>
+    <script defer src="scripts/payment.js"></script>
+    <script defer src="scripts/uniselect.js"></script>
     <script defer src="scripts/getdates.js"></script>
     
   </head>
@@ -20,37 +21,41 @@
         <img src="images/studentpay-logo.webp">
         <nav>
             <ul>
-                <li><a href="home.html">Home</a></li>
+                <li><a href="payment.html" class="active" >Home</a></li>
                 <li><a href="transaction.html">Transactions</a></li>
                 <li><a href="contact-us.html">Contact US</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="about">
       <h1>Student Payment Processing Form</h1>
-    <form id="paymentForm">
-        <label>Select University:</label>
-        <select id="university" required>
-        </select>
-        <br><br>
+      <div class="payment">
+        <form id="paymentForm">
+          <label>Select University:</label>
+          <select id="university" required>
+          </select>
+          <br><br>
 
-        <label>Student ID:</label>
-        <input type="text" id="studentId" required>
-        <br><br>
+          <label>Student ID:</label>
+          <input type="text" id="studentId" required>
+          <br><br>
 
-        <div id="studentDetails">
-            <p>Account Balance: <span id="accountBalance">$0.00</span></p>
-            <label>Semester:</label>
-            <input type="text" id="semester" required>
-            <br><br>
+          <div id="studentDetails">
+              <p>Account Balance: <span id="accountBalance">$0.00</span></p>
+              <label>Semester:</label>
+              <input type="text" id="semester" required>
+              <br><br>
 
-            <label>Amount to Pay:</label>
-            <input type="number" id="amount" required>
-            <br><br>
+              <label>Amount to Pay:</label>
+              <input type="number" id="amount" required>
+              <br><br>
 
-            <button type="button" id="payNow">Pay Now</button>
-        </div>
-    </form>
+              <button type="button" id="payNow">Pay Now</button>
+          </div>
+      </form>
+
+      </div>
+    
 
     </main>
 

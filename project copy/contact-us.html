@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title content="WDD 131, Final Project - StudentPay">WDD 131, Final Project - StudentPay</title>
+    <meta name="author" content="Elisha Mugenyi">
+    <meta name="description" content="Final Project - StudentPay. This application completes University Tuition payments online for Domestic & International students.">
+    <meta property="og:url" content="https://elishamugenyi.github.io/wdd131/Project/home.html">
+    <meta property="og:type" content="WebApp">
+    <meta property="og:title" content="Elisha Mugenyi - WDD 131, Final Project - StudentPay">
+    <link rel="stylesheet" href="styles/student-pay.css">
+    <link rel="stylesheet" href="styles/student-pay-large.css">
+    <script defer src="scripts/student-pay.js"></script>
+    <script defer src="scripts/getdates.js"></script>
+    
+  </head>
+  <body>
+    <header>
+        <img src="images/studentpay-logo.webp">
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="transaction.html">Transactions</a></li>
+                <li><a href="contact-us.html">Contact US</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="about">
+      
+      <div class="message">
+        <h2>Leave a message for us.</h2>
+      </div>
+      <h3>Leave us some feedback</h3>
+      <div class="feedback-and-call">
+        <div class="feedback">
+          <form method="get" id="feedbackForm" class="wf1">
+            <fieldset>
+              <legend>Message Details </legend>
+              <label>First Name * </label>
+              <input type="text" name="fname" id="fname" required>
+  
+              <label>Last Name * </label>
+              <input type="lname" name="lname" id="lname" required>
+  
+              <label>Email : </label>
+              <input type="email" name="email" id="email" placeholder="johndoe@someone.com">
+  
+              <label>Phone: </label>
+              <input type="tel" name="phone" id="phone" placeholder="256777001001">
+  
+              <label>Message: </label>
+              <textarea name="review" id="review"></textarea>
+  
+              <input type="submit" value="Submit Concern">
+  
+            </fieldset>
+          </form>
+        </div>
+        <div class="call">
+          <h3>Give us a call</h3>
+          <label>Phone: </label>
+          <label>+256031001002</label>
+        </div>
+      </div>
+      <div class="chat-button">
+        <h3>Chat with us</h3>
+        <p>
+          To chat with us, click start the live chat and speak to one of our agents.
+        </p>
+        <button id="chat"> Chat with Agent</button>
+      </div>
+    </main>
+
+    <footer>
+        <p>
+            <span id="currentyear"></span> <a href=https://www.studentpay.com>studentPay</a> || Uganda🇺🇬 || Kenya🇰🇪 || Ethiopia🇪🇹 || DR Congo🇨🇩 || US🇺🇸
+          </p>
+          <p id="lastUpdated">last</p>
+    </footer>
+  </body>
+  </html>

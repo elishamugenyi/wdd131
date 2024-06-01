@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title content="WDD 131, Final Project - StudentPay">WDD 131, Final Project - StudentPay</title>
+    <meta name="author" content="Elisha Mugenyi">
+    <meta name="description" content="Final Project - StudentPay. This application completes University Tuition payments online for Domestic & International students.">
+    <meta property="og:url" content="https://elishamugenyi.github.io/wdd131/Project/home.html">
+    <meta property="og:type" content="WebApp">
+    <meta property="og:title" content="Elisha Mugenyi - WDD 131, Final Project - StudentPay">
+    <link rel="stylesheet" href="styles/student-pay.css">
+    <link rel="stylesheet" href="styles/student-pay-large.css">
+    <script defer src="scripts/student-pay.js"></script>
+    <script defer src="scripts/getdates.js"></script>
+    
+  </head>
+    <body>
+        <header>
+            <img src="images/studentpay-logo.webp">
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="transaction.html">Transactions</a></li>
+                    <li><a href="contact-us.html">Contact US</a></li>
+                </ul>
+    
+            </nav>
+            <button id="loginButton" class="loginButton">Login</button>
+        </header>
+        <main class="about">
+            <div class="info">
+                <div class="welcome-msg">
+                    <h2>About StudentPay</h2>
+                    <div class="welcome-msg-content">
+                        <picture>
+                            <source srcset="images/about-us-large.webp" loading="lazy" media="(min-width: 1000px)">
+                            <source srcset="images/about-us.webp" loading="lazy" media="(min-width: 500px)">
+                            <img src="images/about-us.webp" alt="Seemless payment with StudentPay" loading="lazy" width="500px" height="250px">
+                        </picture>
+                        <p>
+                            Welcome to <b>StudentPay</b>, the ultimate solution for students looking to pay their tuition fees online in the simplest and fastest way. 
+                            Our web app is designed with students in mind, providing a seamless and secure platform to handle your university payments with ease.
+                        </p>
+                        <p>
+                            <b>Have Different currency?</b>StudentPay lets pay your tuition regardless of the currency you have.
+                            To get started, <a href="register.html">Register here!</a>
+                        </p>
+                        <p>
+                            <img src="images/student-image.webp" alt="Happy international student" width="200" height="300">
+                        </p>
+                    </div>
+                </div>
+                <div class="key-features">
+                    <h2>Key Features:</h2>
+                    <p>
+                        <b>Ease of Use: </b>Our user-friendly interface makes it easy for students to navigate and complete transactions without any hassle.
+                    </p>
+                    <p>
+                        <b>Speed: </b>Save time with our quick payment processing, ensuring that your tuition payments are handled promptly.
+                    </p>
+                    <p>
+                        <b>Security: </b>We prioritize your security by employing the latest encryption technologies to protect your financial information.
+                    </p>    
+                    <p>
+                        <b>Convenience: </b>Pay your tuition from anywhere in the world at any time, eliminating the need for physical visits to the university's payment office.
+                    </p>
+                    <p>
+                        <b>Support: </b>Our dedicated support team is always here to assist you with any queries or issues you might encounter.
+                    </p> 
+                </div>
+                <div class="details">
+                    <h2> How It Works:</h2>
+                    <p>
+                        1. <a href="register.html">Create an Account:</a> Sign up with your student details to get started.
+                    </p>
+                    <p>
+                        2. Add Payment Method: Securely add your preferred payment method.
+                    </p>
+                    <p>
+                        3. Select University: Choose your university and enter the required payment details.
+                    </p> 
+                    <p>
+                        4. Confirm Payment: Review your payment information and confirm the transaction.
+                    </p>
+                    <p>
+                        5. Receive Confirmation: Get an instant confirmation of your payment, ensuring peace of mind.
+                    </p>
+                    <p>
+                        At StudentPay, our mission is to make the tuition payment process as stress-free as possible, so you can focus on what really matters – your education. Join thousands of students who trust StudentPay for their tuition payments today!
+                    </p>
+                </div>
+                
+            </div>
+            <div class="button-container">
+                <button id="registerButton">Register</button>
+            </div>
+
+        </main>
+
+        <footer>
+            <p>
+                <span id="currentyear"></span> <a href=https://www.studentpay.com>studentPay</a> || Uganda🇺🇬 || Kenya🇰🇪 || Ethiopia🇪🇹 || DR Congo🇨🇩 || US🇺🇸
+            </p>
+            <p id="lastUpdated">last</p>
+        </footer>
+    </body>
+</html>

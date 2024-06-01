@@ -1,0 +1,27 @@
+* {
+    margin: auto;
+    padding: 5px;
+    box-sizing: border-box;
+}
+body {
+    margin-left: 10px;
+    background-color: whitesmoke;
+    margin-right: 10px;
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+header h1 {
+    text-align: center;
+    color: blueviolet;
+}
+.color-schema h2 {
+    color: blueviolet;
+}
+.color-schema .primary {
+    color: purple;
+}
+.color-schema .secondary {
+    color: solid black;
+}
+.color-schema .aux {
+    color: limegreen;
+}

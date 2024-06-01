@@ -1,0 +1,318 @@
+/*Adding all css for the pages here to control the mobile and web views*/
+body {
+    margin: 0;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-size: medium;
+    
+}
+header {
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border: solid purple;
+    max-height: 250px;
+    
+}
+header img {
+    border-radius: 40px;
+    border: 4px solid limegreen;
+    margin-right: 1rem;
+    max-height: 100px;
+}
+nav {
+    flex-grow: 1; 
+    text-align: right;
+    border-radius: 50px;
+    padding: 0 20px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: center;
+    
+}
+nav ul li {
+    margin: 0 10px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s;
+}
+.loginButton {
+    color: white;
+    background-color: purple;
+    font-weight: bold;
+    padding: 10px 10px;
+    margin-bottom: 1.5%;
+}
+nav button:hover {
+    background-color: limegreen;
+}
+a {
+    
+    color: limegreen;
+}
+nav ul li a:hover {
+    background-color: purple;
+    color: limegreen;
+}
+main.about {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: whitesmoke;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 2 rem;
+}
+.welcome-msg {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+}
+.welcome-msg h2 {
+    margin-bottom: 1rem; 
+    margin-left: 1rem;
+}
+.welcome-msg-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+.welcome-msg-content p {
+    flex: 1;
+    text-align: left;
+    margin-bottom: 2%;
+    padding: 2rem;
+    white-space: 10%;
+    
+}
+.welcome-msg picture {
+    flex: 1;
+    text-align: right;
+    margin-left: 1rem;
+}
+.welcome-msg-content img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.key-features,
+ .details {
+    padding: 1rem;
+    margin: 0 auto;
+    text-align: left;
+    width: 100%;
+}
+.key-features {
+    padding-top: 0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.button-container button {
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    margin: 20px;
+    background-color: limegreen;
+    color: black;
+    border: none;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.button-container button:hover {
+    background-color: purple;
+    color: white;
+}
+/*beginning of css for contact.html page*/
+.message, .button-container, .call, .feedback {
+    margin-bottom: 2rem;
+}
+
+.feedback-and-call {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.feedback, .call {
+    flex: 1;
+    width: 50%;
+}
+
+.feedback form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    cursor: pointer;
+}
+
+.feedback label {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback input[type="text"],
+.feedback input[type="lname"],
+.feedback input[type="email"],
+.feedback input[type="tel"],
+.feedback textarea {
+    width: 100%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+.feedback input[type="submit"] {
+    height: 40px;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 100;
+    color: black;
+    background-color: limegreen;
+}
+.feedback input[type=submit]:hover {
+    background-color: purple;
+    color: white;
+}
+.chat-button {
+    text-align: start;
+    padding: 1rem;
+    margin: 20px;
+    font-size: 1rem;
+}
+
+.chat-button button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: black;
+    background-color: limegreen;
+    cursor: pointer;
+}
+.chat-button button:hover {
+    background-color: purple;
+    color: white;
+}
+/*end of contact page css*/
+
+/*beginning of css for register html form*/
+form {
+    background: white;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: purple;
+    color: white;
+}
+/*end of css for register html form*/
+
+/*Beginnig of css for login form*/
+.loginform h3 {
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0;
+}
+.loginform {
+    margin-top: 10%;
+    width: 50%;
+    margin-left: 20%;
+    height: 40%;
+}
+.loginform label {
+    padding: 0.5px;
+    margin: 0.5rem;
+}
+.loginform input[type="submit"] {
+    margin: 1rem;
+    margin-right: 20%;
+    padding: 1rem;
+}
+.loginforminput[type="submit"] {
+    background-color: purple;
+    color: white;
+}
+footer {
+    background-color:black;
+    color: white;
+    padding: 4px;
+    text-align: center;
+    width: 100%;  
+}
+
+@media (max-width: 768px) {
+    footer, header {
+        width: 100%;
+    }
+    .welcome-msg {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .welcome-msg picture,
+    .welcome-msg p {
+        text-align: center;
+        width: 100%;
+    }
+    .feedback-and-call {
+        flex-direction: column;
+    }
+
+    .feedback form {
+        grid-template-columns: 1fr;
+    }
+
+    .feedback label,
+    .feedback input[type="text"],
+    .feedback input[type="lname"],
+    .feedback input[type="email"],
+    .feedback input[type="tel"],
+    .feedback textarea {
+        width: 100%;
+    }
+}
