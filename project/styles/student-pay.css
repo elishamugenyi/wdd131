@@ -13,7 +13,7 @@ header {
     padding: 10px;
     border: solid purple;
     max-height: 250px;
-    width: 100%;
+    width: auto;
     
 }
 header img {
@@ -47,6 +47,9 @@ nav ul li a {
     font-weight: bold;
     padding: 10px 15px;
     transition: color 0.3s;
+}
+nav ul li a.active {
+    text-decoration: underline;
 }
 .loginButton {
     color: white;
@@ -155,7 +158,7 @@ main.about {
     margin-bottom: 2rem;
 }
 .message h2 {
-    text-align: center;
+    margin-right: 15%;
 }
 .about h1 {
     margin-left: 250px;
@@ -183,16 +186,19 @@ main.about {
     box-sizing: border-box;
 }
 .feedback input[type="submit"], .payment button {
-    height: 40px;
+    height: 50px;
     width: 50%;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem;
     font-size: 1rem;
     font-weight: 100;
     color: black;
     background-color: limegreen;
 }
+.feedback input[type="submit"] {
+    margin-left: 25%;
+}
 .payment button {
-    margin-left: 100px;
+    margin-left: 150px;
 }
 .feedback input[type=submit]:hover {
     background-color: purple;
@@ -269,65 +275,138 @@ input[type="submit"]:hover {
 
 /*Beginnig of css for login form*/
 .loginform h3 {
-    text-align: center;
     padding: 0.5rem;
-    margin: 0;
+    margin-left: 30%;
 }
 .loginform {
-    margin-top: 10%;
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+    margin-top: 5%;
     margin-left: 20%;
-    height: 40%;
+    height: 30%;
 }
 .loginform label {
     padding: 0.5px;
     margin: 0.5rem;
 }
 .loginform input[type="submit"] {
-    margin: 1rem;
-    margin-right: 20%;
-    padding: 1rem;
+    margin-left: 40%;
+    padding: 0.5rem;
+    height: 40px;
+    width: 20%;
 }
 .loginforminput[type="submit"] {
     background-color: purple;
     color: white;
 }
+/*end of login form css*/
+
+/*beginning of about us page css*/
+main .about-us {
+    background-color: white;
+    padding: 2rem 0;
+}
+
+main .about-us .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+main .about-us h2, main .about-us h3 {
+    color: #333;
+}
+
+main .about-us p {
+    margin-bottom: 1rem;
+}
+/*end of about us page css*/
+
+/*beginning of faq page css*/
+main .faq {
+    background-color: white;
+    padding: 2rem 0;
+}
+
+main .faq .container {
+    max-width: 800px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+main .faq h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+main .faq .faq-item {
+    margin-bottom: 1.5rem;
+}
+
+main .faq .faq-item h3 {
+    color: #333;
+    margin: 0 0 0.5rem;
+    cursor: pointer;
+}
+
+main .faq .faq-item p {
+    margin: 0;
+    display: none;
+}
+/*end of faq page css*/
+
+/*css for transactions*/
+main.boxtable {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    margin: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/*end of css for transactions*/
 footer {
     background-color:black;
     color: white;
     padding: 4px;
     text-align: center;
-    width: 100%;  
+    width: auto;  
 }
 
-@media (max-width: 768px) {
-    footer, header {
-        width: 100%;
-    }
-    .welcome-msg {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .welcome-msg picture,
-    .welcome-msg p {
-        text-align: center;
-        width: 100%;
-    }
-    .feedback-and-call {
-        flex-direction: column;
-    }
-
-    .feedback form {
-        grid-template-columns: 1fr;
-    }
-
-    .feedback label,
-    .feedback input[type="text"],
-    .feedback input[type="lname"],
-    .feedback input[type="email"],
-    .feedback input[type="tel"],
-    .feedback textarea {
-        width: 100%;
-    }
-}
