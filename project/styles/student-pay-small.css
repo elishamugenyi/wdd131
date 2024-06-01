@@ -1,0 +1,53 @@
+@media (max-width: 600px) {
+    footer, header {
+        width: 100%;
+    }
+    .welcome-msg {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .welcome-msg picture,
+    .welcome-msg p {
+        text-align: center;
+        width: 100%;
+    }
+    .feedback-and-call {
+        flex-direction: column;
+    }
+
+    .feedback form {
+        grid-template-columns: 1fr;
+    }
+
+    .feedback label,
+    .feedback input[type="text"],
+    .feedback input[type="lname"],
+    .feedback input[type="email"],
+    .feedback input[type="tel"],
+    .feedback textarea {
+        width: 100%;
+    }
+
+    table, th, td {
+        display: block;
+        width: 100%;
+    }
+
+    th, td {
+        box-sizing: border-box;
+        text-align: right;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    th::before, td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: calc(50% - 20px);
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+    }
+}
