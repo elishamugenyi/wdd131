@@ -10,43 +10,42 @@
     <meta property="og:type" content="WebApp">
     <meta property="og:title" content="Elisha Mugenyi - WDD 131, Final Project - StudentPay">
     <link rel="stylesheet" href="styles/student-pay.css">
-    <link rel="stylesheet" href="styles/student-pay-large.css">
+    <link rel="stylesheet" href="styles/student-pay-small.css">
     <script defer src="scripts/payment.js"></script>
     <script defer src="scripts/getdates.js"></script>
     
   </head>
   <body>
     <header>
-        <img src="images/studentpay-logo.webp">
-        <nav>
-            <ul>
-                <li><a href="payment.html">Payments</a></li>
-                <li><a href="transaction.html">Transactions</a></li>
-                <li><a href="contact-us.html">Contact US</a></li>
-            </ul>
-        </nav>
+      <img src="images/studentpay-logo.webp">
+      <nav>
+        <ul>
+          <li><a href="payment.html">Payments</a></li>
+          <li><a href="transaction.html" class="active">Transactions</a></li>
+          <li><a href="contact-us.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
-    <main>
+    <main class="boxtable">
       <h1>Transaction Log</h1>
-    <table border="1">
+      <table border="1">
         <thead>
-            <tr>
-                <th>Student ID</th>
-                <th>Semester</th>
-                <th>Amount</th>
-            </tr>
+          <tr>
+            <th>Student ID</th>
+            <th>Semester</th>
+            <th>Amount</th>
+          </tr>
         </thead>
         <tbody id="transactionBody">
-            <!-- Transaction rows will be inserted here -->
+          <!-- Transaction rows will be inserted here -->
         </tbody>
-    </table>
+      </table>
     </main>
-
     <footer>
         <p>
-            <span id="currentyear"></span> <a href=https://www.studentpay.com>studentPay</a> || Uganda🇺🇬 || Kenya🇰🇪 || Ethiopia🇪🇹 || DR Congo🇨🇩 || US🇺🇸
-          </p>
-          <p id="lastUpdated">last</p>
+          <span id="currentyear"></span> <a href=https://www.studentpay.com>studentPay</a> || Uganda🇺🇬 || Kenya🇰🇪 || Ethiopia🇪🇹 || DR Congo🇨🇩 || US🇺🇸
+        </p>
+        <p id="lastUpdated">last</p>
     </footer>
   </body>
-  </html>
+</html>
