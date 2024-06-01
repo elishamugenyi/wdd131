@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const currentYear = new Date().getFullYear();
 
     // Update the span element with the current year
-    document.getElementById('currentyear').textContent = ` \u00A9 ${currentYear}`;
+    document.getElementById('currentyear').textContent = ` \u00A9 ${currentYear}. All Rights Reserved`;
 
     // Get the last modified date of the file
     const lastUpdated = new Date(document.lastModified);
