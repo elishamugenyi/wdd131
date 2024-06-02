@@ -27,30 +27,6 @@ document.querySelectorAll('.navigation a').forEach(link => {
     });
 });
 
-
-
-/*const hamButton = document.querySelector('#menu');
-const navigation = document.querySelector('.navigation');
-  
-hamButton.addEventListener('click', () => {
-    navigation.style.display = (navigation.style.display === 'block') ? 'none' : 'block';
-    hamButton.classList.toggle('open');
-    });
-*/
-// Add event listener to navigation links
-//document.querySelectorAll('.navigation a').forEach(link => {
-    //link.addEventListener('click', (event) => {
-        // Prevent the default behavior of the link
-      //  event.preventDefault();
-        // Close the navigation menu
-        //navigation.style.display = 'none';
-        //hamButton.classList.remove('open');
-        // Optionally, you can add logic here to perform actions specific to each link
-        // For example, if you want to navigate to the href of the clicked link
-        // window.location.href = link.href;
-   // });
-//});
-
 const temples = [
     {
       templeName: "Aba Nigeria",
